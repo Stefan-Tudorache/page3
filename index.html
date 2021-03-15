@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 3</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-print-color-adjust: exact;
+        -webkit-min-device-pixel-ratio: 0;
+      }
+
+      :root {
+        --primary-color: darkorchid;
+      }
+
+      .box {
+        width: 5cm;
+        height: 5cm;
+        border: solid 2px var(--primary-color);
+        margin: 10px;
+        position: relative;
+      }
+
+      .container {
+        width: 99vw;
+        height: 99vh;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex: 25%;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-size: 35px;
+        color: var(--primary-color);
+      }
+
+      .container h1 {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+      }
+
+      .container h2 {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+      }
+
+      .container h3 {
+        position: absolute;
+        bottom: 5px;
+        left: 10px;
+      }
+
+      .container h4 {
+        position: absolute;
+        bottom: 5px;
+        right: 10px;
+      }
+
+      .container h5 {
+        text-align: center;
+        padding-top: 3.4cm;
+        color: var(--primary-color);
+        font-size: 40px;
+      }
+
+      .fire {
+        border: 2px solid orangered;
+      }
+
+      .fire h1,
+      .fire h2,
+      .fire h3,
+      .fire h4 {
+        color: orangered;
+        font-size: 30px;
+      }
+
+      .fire h5 {
+        color: orangered;
+        font-size: 35px;
+      }
+
+      .box-1 {
+        background: url("./img/woods/wolf.jpg") no-repeat center center/cover;
+      }
+
+      .box-2 {
+        background: url("./img/woods/strange.mushroom.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-3 {
+        background: url("./img/woods/dinosaur.jpg") no-repeat 20% center/ cover;
+      }
+
+      .box-4 {
+        background: url("./img/woods/grandma\ house.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-5 {
+        background: url("./img/woods/Lilith.jpg") no-repeat center center/cover;
+      }
+
+      .box-6 {
+        background: url("./img/woods/good.fairy.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-7 {
+        background: url("./img/woods/fallen-tree.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-8 {
+        background: url("./img/woods/entprotector.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-9 {
+        background: url("./img/woods/bad.fairy.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-10 {
+        background: url("./img/woods/dark16.jpg") no-repeat center center/cover;
+      }
+
+      .box-11 {
+        background: url("./img/woods/dark17.jpg") no-repeat center center/cover;
+      }
+
+      .box-12 {
+        background: url("./img/woods/dark18.jpg") no-repeat center center/cover;
+      }
+
+      .box-13 {
+        background: url("./img/woods/dark19.jpg") no-repeat center center/cover;
+      }
+
+      /* ******************************************************** */
+      .box-14 {
+        background: url("./img/fire/Phoenix.png") no-repeat center center/cover;
+      }
+
+      .box-15 {
+        background: url("./img/fire/warg.jpg") no-repeat center center/cover;
+      }
+
+      .box-16 {
+        background: url("./img/fire/fire.break2.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-17 {
+        background: url("./img/fire/Leonidas.jpg") no-repeat center center/cover;
+      }
+
+      .box-18 {
+        background: url("./img/fire/Cerberus.jpeg") no-repeat center
+          center/cover;
+      }
+
+      .box-19 {
+        background: url("./img/fire/fire.break.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-20 {
+        background: url("./img/fire/fire.ghost.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-21 {
+        background: url("./img/fire/golem.jpg") no-repeat center center/cover;
+      }
+
+      .box-22 {
+        background: url("./img/fire/Samael.jpg") no-repeat center center/cover;
+      }
+
+      .box-23 {
+        background: url("./img/fire/fire1.jpg") no-repeat center center/cover;
+      }
+
+      .box-24 {
+        background: url("./img/fire/fire2.jpg") no-repeat center center/cover;
+      }
+
+      .box-25 {
+        background: url("./img/fire/fire3.jpg") no-repeat center center/cover;
+      }
+
+      .box-26 {
+        background: url("./img/fire/fire4.jpg") no-repeat center center/cover;
+      }
+
+      .box-27 {
+        background: url("./img/fire/fire5.jpg") no-repeat center center/cover;
+      }
+
+      .box-28 {
+        background: url("./img/fire/fire6.jpg") no-repeat center center/cover;
+      }
+
+      .box-29 {
+        background: url("./img/fire/fire7.jpg") no-repeat center center/cover;
+      }
+
+      .box-30 {
+        background: url("./img/fire/fire8.jpg") no-repeat center center/cover;
+      }
+
+      .box-31 {
+        background: url("./img/fire/fire9.jpg") no-repeat center center/cover;
+      }
+
+      .box-32 {
+        background: url("./img/fire/fire10.jpg") no-repeat center center/cover;
+      }
+
+      .box-33 {
+        background: url("./img/fire/lava.bridge.png") no-repeat center
+          center/cover;
+      }
+
+      .box-34 {
+        background: url("./img/fire/fire11.jpg") no-repeat center center/cover;
+      }
+
+      .box-35 {
+        background: url("./img/fire/fire12.jpg") no-repeat center center/cover;
+      }
+
+      .box-36 {
+        background: url("./img/fire/fire13.jpg") no-repeat center center/cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box-1">
+        <h1>31</h1>
+        <h2>31</h2>
+        <h3>31</h3>
+        <h4>31</h4>
+      </div>
+      <div class="box box-2">
+        <h1>34</h1>
+        <h2>34</h2>
+        <h3>34</h3>
+        <h4>34</h4>
+      </div>
+      <div class="box box-3">
+        <h1>37</h1>
+        <h2>37</h2>
+        <h3>37</h3>
+        <h4>37</h4>
+      </div>
+      <div class="box box-4">
+        <h1>40</h1>
+        <h2>40</h2>
+        <h3>40</h3>
+        <h4>40</h4>
+      </div>
+      <div class="box box-5">
+        <h1>43</h1>
+        <h2>43</h2>
+        <h3>43</h3>
+        <h4>43</h4>
+      </div>
+      <div class="box box-6">
+        <h1>46</h1>
+        <h2>46</h2>
+        <h3>46</h3>
+        <h4>46</h4>
+      </div>
+      <div class="box box-7">
+        <h1>49</h1>
+        <h2>49</h2>
+        <h3>49</h3>
+        <h4>49</h4>
+      </div>
+      <div class="box box-8">
+        <h1>52</h1>
+        <h2>52</h2>
+        <h3>52</h3>
+        <h4>52</h4>
+      </div>
+      <div class="box box-9">
+        <h1>56</h1>
+        <h2>56</h2>
+        <h3>56</h3>
+        <h4>56</h4>
+      </div>
+      <div class="box box-10">
+        <h5>51</h5>
+      </div>
+      <div class="box box-11">
+        <h5>53</h5>
+      </div>
+      <div class="box box-12">
+        <h5>54</h5>
+      </div>
+      <div class="box box-13">
+        <h5>55</h5>
+      </div>
+      <div class="box box-14 fire">
+        <h1>115</h1>
+        <h2>115</h2>
+        <h3>115</h3>
+        <h4>115</h4>
+      </div>
+      <div class="box box-15 fire">
+        <h1>118</h1>
+        <h2>118</h2>
+        <h3>118</h3>
+        <h4>118</h4>
+      </div>
+      <div class="box box-16 fire">
+        <h1>121</h1>
+        <h2>121</h2>
+        <h3>121</h3>
+        <h4>121</h4>
+      </div>
+      <div class="box box-17 fire">
+        <h1>124</h1>
+        <h2>124</h2>
+        <h3>124</h3>
+        <h4>124</h4>
+      </div>
+      <div class="box box-18 fire">
+        <h1>127</h1>
+        <h2>127</h2>
+        <h3>127</h3>
+        <h4>127</h4>
+      </div>
+      <div class="box box-19 fire">
+        <h1>130</h1>
+        <h2>130</h2>
+        <h3>130</h3>
+        <h4>130</h4>
+      </div>
+      <div class="box box-20 fire">
+        <h1>133</h1>
+        <h2>133</h2>
+        <h3>133</h3>
+        <h4>133</h4>
+      </div>
+      <div class="box box-21 fire">
+        <h1>136</h1>
+        <h2>136</h2>
+        <h3>136</h3>
+        <h4>136</h4>
+      </div>
+      <div class="box box-22 fire">
+        <h1>140</h1>
+        <h2>140</h2>
+        <h3>140</h3>
+        <h4>140</h4>
+      </div>
+      <!-- ***************************** -->
+      <div class="box box-23 fire">
+        <h5>113</h5>
+      </div>
+      <div class="box box-24 fire">
+        <h5>114</h5>
+      </div>
+      <div class="box box-25 fire">
+        <h5>116</h5>
+      </div>
+      <div class="box box-26 fire">
+        <h5>117</h5>
+      </div>
+      <div class="box box-27 fire">
+        <h5>119</h5>
+      </div>
+      <div class="box box-28 fire">
+        <h5>120</h5>
+      </div>
+      <div class="box box-29 fire">
+        <h5>122</h5>
+      </div>
+      <div class="box box-30 fire">
+        <h5>123</h5>
+      </div>
+      <div class="box box-31 fire">
+        <h5>125</h5>
+      </div>
+      <div class="box box-32 fire">
+        <h5>126</h5>
+      </div>
+      <div class="box box-33 fire">
+        <h5>128</h5>
+      </div>
+      <div class="box box-34 fire">
+        <h5>129</h5>
+      </div>
+      <div class="box box-35 fire">
+        <h5>131</h5>
+      </div>
+      <div class="box box-36 fire">
+        <h5>132</h5>
+      </div>
+    </div>
+  </body>
+</html>
